@@ -8,7 +8,7 @@ import rewire = require("rewire");
 import vscode = require("vscode");
 
 // Setup types that are not exported.
-const customViews = rewire("../../src/features/CustomViews");
+const customViews = rewire("../src/features/CustomViews");
 const htmlContentViewClass = customViews.__get__("HtmlContentView");
 const HtmlContentView: typeof htmlContentViewClass = htmlContentViewClass;
 

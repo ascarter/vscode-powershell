@@ -4,10 +4,10 @@
 import * as assert from "assert";
 import * as vscode from "vscode";
 import { before, beforeEach, afterEach } from "mocha";
-import { IExternalPowerShellDetails, IPowerShellExtensionClient } from "../../src/features/ExternalApi";
+import { IExternalPowerShellDetails, IPowerShellExtensionClient } from "../src/features/ExternalApi";
 
 // tslint:disable-next-line: no-var-requires
-const PackageJSON: any = require("../../../package.json");
+const PackageJSON: any = require("../../package.json");
 const testExtensionId = `${PackageJSON.publisher}.${PackageJSON.name}`;
 
 suite("ExternalApi feature - Registration API", () => {

@@ -64,7 +64,7 @@ task CopyEditorServices -If { !(Test-Path ./modules/PowerShellEditorServices) -a
 
 task Build CopyEditorServices, Restore, {
     Write-Host "`n### Building vscode-powershell" -ForegroundColor Green
-    exec { & npm run compile }
+    exec { & npm run build }
 }
 
 #endregion

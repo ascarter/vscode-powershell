@@ -3,7 +3,7 @@
 
 import * as assert from "assert";
 import * as vscode from "vscode";
-import { ISECompatibilityFeature } from "../../src/features/ISECompatibility";
+import { ISECompatibilityFeature } from "../src/features/ISECompatibility";
 
 suite("ISECompatibility feature", () => {
     test("It sets ISE Settings", async () => {

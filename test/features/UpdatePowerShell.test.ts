@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import * as assert from "assert";
-import { GitHubReleaseInformation } from "../../src/features/UpdatePowerShell";
+import { GitHubReleaseInformation } from "../src/features/UpdatePowerShell";
 
 // Due to Azure DevOps using the same macOS instances, the macOS builds hit
 // the GitHub API rate limit often. Let's skip these tests on macOS until

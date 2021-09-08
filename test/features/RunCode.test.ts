@@ -6,7 +6,7 @@ import rewire = require("rewire");
 import vscode = require("vscode");
 
 // Setup function that is not exported.
-const customViews = rewire("../../src/features/RunCode");
+const customViews = rewire("../src/features/RunCode");
 const createLaunchConfig = customViews.__get__("createLaunchConfig");
 
 enum LaunchType {
